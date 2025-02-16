@@ -1,0 +1,16 @@
+.nav__vector {
+  color: rgba(255, 255, 255, 1);
+  max-width: 173px;
+}
+.nav__brand {
+  display: flex;
+
+  align-items: center;
+  height: 100%; /* Mantém alinhado ao header */
+}
+
+.nav__logo img {
+  width: 173px;
+  height: 33px;
+  object-fit: contain;
+}
