@@ -29,110 +29,142 @@
         </nav>
       </header>
 
-      <section class="profile">
-        <img
-          src="./images/profileImage.jpg"
-          class="profile__image"
-          alt="Picture of an explorer, Jacques Cousteau"
-        />
-
-        <div class="profile__info">
-          <div class="profile__title-container">
-            <h1 class="profile__title">Jacques Cousteau</h1>
-            <button class="profile__edit-button">
-              <img src="./images/EditButton.png" alt="Edit profile button" />
-            </button>
-          </div>
-          <p class="profile__subtitle">Explorer</p>
-        </div>
-        <button class="profile__add-button">
-          <img src="./images/AddButton.png" alt="Add new item button" />
+      <div class="popup">
+        <button class="popup__close-button">
+          <img
+            class="popup__icon"
+            src="./images/closebutton.png"
+            alt="close icon"
+          />
         </button>
-      </section>
+        <h3 class="popup__title">Edit your informations</h3>
+        <form class="popup__form" name="register">
+          <input
+            id="name"
+            class="popup__input"
+            type="text"
+            placeholder="Name"
+          />
+          <input
+            id="about"
+            class="popup__input"
+            type="text"
+            placeholder="Your Description"
+          />
+          <button class="popup__button">Save</button>
+        </form>
+      </div>
 
-      <section class="elements">
-        <div class="elements__item">
+      <main class="content">
+        <section class="profile">
           <img
-            class="elements__item-image"
-            src="./images/Image1.jpg"
-            alt="Imagem 1"
+            src="./images/profileImage.jpg"
+            class="profile__image"
+            alt="Picture of an explorer, Jacques Cousteau"
           />
-          <div class="elements__item__info">
-            <p class="elements__item__name">Vale de Yosemite</p>
-            <button class="elements__item__likeBtn">
-              <img src="./images/likeButton.svg" />
-            </button>
-          </div>
-        </div>
 
-        <div class="elements__item">
-          <img
-            class="elements__item-image"
-            src="./images/image2.png"
-            alt="Imagem 2"
-          />
-          <div class="elements__item__info">
-            <p class="elements__item__name">Lago Louise</p>
-            <button class="elements__item__likeBtn">
-              <img src="./images/likeButton.svg" />
-            </button>
+          <div class="profile__info">
+            <div class="profile__title-container">
+              <h1 class="profile__title">Jacques Cousteau</h1>
+              <button class="profile__edit-button">
+                <img src="./images/EditButton.png" alt="Edit profile button" />
+              </button>
+            </div>
+            <p class="profile__subtitle">Explorer</p>
           </div>
-        </div>
+          <button class="profile__add-button">
+            <img src="./images/AddButton.png" alt="Add new item button" />
+          </button>
+        </section>
 
-        <div class="elements__item">
-          <img
-            class="elements__item-image"
-            src="./images/image3.png"
-            alt="Imagem 1"
-          />
-          <div class="elements__item__info">
-            <p class="elements__item__name">Montanhas Care...</p>
-            <button class="elements__item__likeBtn">
-              <img src="./images/likeButton.svg" />
-            </button>
+        <section class="elements">
+          <div class="elements__item">
+            <img
+              class="elements__item-image"
+              src="./images/Image1.jpg"
+              alt="Imagem 1"
+            />
+            <div class="elements__item__info">
+              <p class="elements__item__name">Vale de Yosemite</p>
+              <button class="elements__item__likeBtn">
+                <img src="./images/likeButton.svg" />
+              </button>
+            </div>
           </div>
-        </div>
 
-        <div class="elements__item">
-          <img
-            class="elements__item-image"
-            src="./images/image4.png"
-            alt="Imagem 1"
-          />
-          <div class="elements__item__info">
-            <p class="elements__item__name">Latemar</p>
-            <button class="elements__item__likeBtn">
-              <img src="./images/likeButton.svg" />
-            </button>
+          <div class="elements__item">
+            <img
+              class="elements__item-image"
+              src="./images/image2.png"
+              alt="Imagem 2"
+            />
+            <div class="elements__item__info">
+              <p class="elements__item__name">Lago Louise</p>
+              <button class="elements__item__likeBtn">
+                <img src="./images/likeButton.svg" />
+              </button>
+            </div>
           </div>
-        </div>
-        <div class="elements__item">
-          <img
-            class="elements__item-image"
-            src="./images/image5.png"
-            alt="Imagem 1"
-          />
-          <div class="elements__item__info">
-            <p class="elements__item__name">Parque Nacional...</p>
-            <button class="elements__item__likeBtn">
-              <img src="./images/likeButton.svg" />
-            </button>
+
+          <div class="elements__item">
+            <img
+              class="elements__item-image"
+              src="./images/image3.png"
+              alt="Imagem 1"
+            />
+            <div class="elements__item__info">
+              <p class="elements__item__name">Montanhas Care...</p>
+              <button class="elements__item__likeBtn">
+                <img src="./images/likeButton.svg" />
+              </button>
+            </div>
           </div>
-        </div>
-        <div class="elements__item">
-          <img
-            class="elements__item-image"
-            src="./images/image6.png"
-            alt="Imagem 1"
-          />
-          <div class="elements__item__info">
-            <p class="elements__item__name">Lago di Braies</p>
-            <button class="elements__item__likeBtn">
-              <img src="./images/likeButton.svg" />
-            </button>
+
+          <div class="elements__item">
+            <img
+              class="elements__item-image"
+              src="./images/image4.png"
+              alt="Imagem 1"
+            />
+            <div class="elements__item__info">
+              <p class="elements__item__name">Latemar</p>
+              <button class="elements__item__likeBtn">
+                <img src="./images/likeButton.svg" />
+              </button>
+            </div>
           </div>
-        </div>
-      </section>
+          <div class="elements__item">
+            <img
+              class="elements__item-image"
+              src="./images/image5.png"
+              alt="Imagem 1"
+            />
+            <div class="elements__item__info">
+              <p class="elements__item__name">Parque Nacional...</p>
+              <button class="elements__item__likeBtn">
+                <img src="./images/likeButton.svg" />
+              </button>
+            </div>
+          </div>
+          <div class="elements__item">
+            <img
+              class="elements__item-image"
+              src="./images/image6.png"
+              alt="Imagem 1"
+            />
+            <div class="elements__item__info">
+              <p class="elements__item__name">Lago di Braies</p>
+              <button class="elements__item__likeBtn">
+                <img src="./images/likeButton.svg" />
+              </button>
+            </div>
+          </div>
+        </section>
+      </main>
+      <footer class="footer">
+        <p class="footer__copyrigth">@2024. Ana Lopes</p>
+      </footer>
     </div>
+    <script src="/index.js"></script>
   </body>
 </html>

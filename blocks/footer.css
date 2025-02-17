@@ -1,0 +1,17 @@
+.footer {
+  max-width: 880px;
+  margin: 67px auto 60px;
+}
+.footer__copyrigth {
+  font-family: "Inter";
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21.78px;
+  color: rgba(84, 84, 84, 1);
+}
+
+@media screen and (max-width: 544px) {
+  .footer {
+    line-height: 14px;
+  }
+}

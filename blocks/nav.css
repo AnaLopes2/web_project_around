@@ -4,9 +4,8 @@
 }
 .nav__brand {
   display: flex;
-
   align-items: center;
-  height: 100%; /* Mantém alinhado ao header */
+  height: 100%;
 }
 
 .nav__logo img {
