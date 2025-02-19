@@ -1,5 +1,5 @@
 .popup {
-  /* display: none;*/
+  display: none;
   position: fixed;
   top: 50%;
   left: 50%;
@@ -8,7 +8,6 @@
   width: 430px;
   height: 330px;
   border-radius: 10px;
-
   box-shadow: 0px 0px 25px 0px rgba(0, 0, 0, 0.15);
 }
 
@@ -27,39 +26,57 @@
 }
 
 .popup__title {
-  font-family: "Inter", sans-serif;
+  font-family: "Inter", "Arial", sans-serif;
   font-weight: 900;
   font-size: 24px;
   color: black;
-  margin: 34px 36px 54px;
+  margin: 34px 0 54px;
+  text-align: right;
+}
+.popup_change_display {
+  max-width: 60%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+  position: fixed;
 }
 
 .popup__form {
   display: flex;
   flex-direction: column;
-  gap: 10px;
 }
-
-.popup__input {
+.popup__input_name {
+  margin-bottom: 29.74px;
   padding-bottom: 13.26px;
   border: none;
   border-bottom: 1px solid #ccc;
   border-radius: 5px;
   font-size: 16px;
-  margin: 0 36px 29.74px;
+}
+.popup__input_description {
+  padding-bottom: 13.26px;
+  border: none;
+  border-bottom: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
 }
 
 .popup__button {
   background-color: rgba(0, 0, 0, 1);
   color: rgba(255, 255, 255, 1);
   border: none;
-  font-size: 16px;
   border-radius: 2px;
   cursor: pointer;
   width: 358px;
   height: 50.15px;
-  margin: 18.26px auto 36.51px;
+  margin: 48px auto 36.51px;
   transition: background 0.3s, transform 0.3s;
+  font-family: "Inter", "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21.78px;
+  text-align: center;
 }
 
 .popup__button:hover {

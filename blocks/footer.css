@@ -1,6 +1,7 @@
 .footer {
   max-width: 880px;
   margin: 67px auto 60px;
+  padding: 16px;
 }
 .footer__copyrigth {
   font-family: "Inter";
@@ -9,9 +10,20 @@
   line-height: 21.78px;
   color: rgba(84, 84, 84, 1);
 }
-
 @media screen and (max-width: 544px) {
   .footer {
-    line-height: 14px;
+    margin: 30px auto 36px;
+    margin-left: 16px;
+  }
+}
+@media screen and (max-width: 320px) {
+  .footer {
+    margin: 30px auto 36px;
+    margin-left: 16px;
+  }
+
+  .footer__copyrigth {
+    font-size: 14px; /* Ajusta o tamanho da fonte para telas menores */
+    line-height: 17px;
   }
 }

@@ -11,6 +11,7 @@
   box-sizing: border-box;
   row-gap: 20px;
   column-gap: 17px;
+  padding-left: 19px;
 }
 
 .elements__item {
@@ -42,13 +43,47 @@
 }
 .elements__item__name {
   color: rgba(0, 0, 0, 1);
-  font-family: Inter;
+  font-family: "Inter", "Arial", sans-serif;
   font-weight: 900;
   font-size: 24px;
   line-height: 29.05px;
 }
 .elements__item__likeBtn {
-  background: none;
-  text-decoration: none;
+  background-color: transparent;
   border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.elements__item__likeBtn:hover .like-icon {
+  opacity: 0.5;
+}
+
+.like-icon {
+  width: 21px;
+  height: 19px;
+  transition: all 0.3s ease;
+}
+
+.elements__item__likeBtn.liked .like-icon {
+  content: url("../images/likedButton.png");
+}
+
+@media screen and (max-width: 544px) {
+  .elements {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    gap: 20px;
+    max-width: 100%;
+    height: auto;
+    top: 448px;
+    left: 19px;
+  }
+
+  .elements__item {
+    width: 282px;
+    height: 361px;
+    margin: 0 auto;
+  }
 }
