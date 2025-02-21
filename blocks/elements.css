@@ -30,7 +30,7 @@
   height: 282px;
   object-fit: cover;
 }
-.elements__item__info {
+.elements__item-info {
   background-color: white;
   height: 79px;
   display: flex;
@@ -41,21 +41,24 @@
   padding: 25px 15px 31px 21px;
   margin-top: auto;
 }
-.elements__item__name {
+.elements__item-name {
   color: rgba(0, 0, 0, 1);
   font-family: "Inter", "Arial", sans-serif;
   font-weight: 900;
   font-size: 24px;
   line-height: 29.05px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
 }
-.elements__item__likeBtn {
+.elements__item-likeBtn {
   background-color: transparent;
   border: none;
   cursor: pointer;
   transition: all 0.3s ease;
 }
 
-.elements__item__likeBtn:hover .like-icon {
+.elements__item-likeBtn:hover .like-icon {
   opacity: 0.5;
 }
 
@@ -65,11 +68,24 @@
   transition: all 0.3s ease;
 }
 
-.elements__item__likeBtn.liked .like-icon {
+.elements__item-likeBtn.liked .like-icon {
   content: url("../images/likedButton.png");
 }
+@media screen and (max-width: 800px) {
+  .elements {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 361px);
+    height: auto;
+    padding-left: 10px;
+    padding-right: 10px;
+    max-width: 510px;
+  }
 
-@media screen and (max-width: 544px) {
+  .elements__item {
+    max-width: 100%;
+  }
+}
+@media screen and (max-width: 320px) {
   .elements {
     display: grid;
     grid-template-columns: 1fr;

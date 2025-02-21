@@ -9,8 +9,23 @@
   height: 330px;
   border-radius: 10px;
   box-shadow: 0px 0px 25px 0px rgba(0, 0, 0, 0.15);
+  z-index: 1000;
+}
+.popup-overlay {
+  display: none;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7); /* Reduzi a opacidade para 30% */
+  z-index: 999;
+}
+.popup_opened {
+  display: block;
 }
 
+.popup-overlay_opened {
+  display: block;
+}
 .popup__close-button {
   position: absolute;
   top: -40px;
@@ -30,8 +45,10 @@
   font-weight: 900;
   font-size: 24px;
   color: black;
-  margin: 34px 0 54px;
-  text-align: right;
+  max-width: 320px;
+  height: 23px;
+  margin: 34px 36px 54px;
+  align-self: flex-start;
 }
 .popup_change_display {
   max-width: 60%;
@@ -46,20 +63,26 @@
   display: flex;
   flex-direction: column;
 }
-.popup__input_name {
+.popup__input-name {
   margin-bottom: 29.74px;
   padding-bottom: 13.26px;
   border: none;
   border-bottom: 1px solid #ccc;
   border-radius: 5px;
   font-size: 16px;
+  color: black;
 }
-.popup__input_description {
+.popup__input-description {
   padding-bottom: 13.26px;
   border: none;
   border-bottom: 1px solid #ccc;
   border-radius: 5px;
   font-size: 16px;
+  color: black;
+}
+.popup__input-name::placeholder,
+.popup__input-description::placeholder {
+  color: black;
 }
 
 .popup__button {
@@ -81,4 +104,55 @@
 
 .popup__button:hover {
   background-color: rgb(47, 45, 45);
+}
+
+@media screen and (max-width: 644px) {
+  .popup {
+    max-width: 282px;
+    height: 322px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-width: 1px;
+    z-index: 1000;
+  }
+
+  .popup__close-button {
+    top: -45px;
+    left: 224px;
+  }
+
+  .popup__icon {
+    width: 20px;
+    height: 20px;
+  }
+  .popup__title {
+    width: 238px;
+    height: 22px;
+
+    align-self: flex-end;
+
+    font-family: Inter;
+    font-weight: 900;
+    font-size: 18px;
+    line-height: 21.78px;
+    margin: 25px auto 76px 22px;
+  }
+  .popup__form {
+    width: 238px;
+  }
+  .popup__button {
+    width: 238px;
+  }
+
+  .popup__input-name {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16.94px;
+  }
+  .popup__input-description {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16.94px;
+  }
 }

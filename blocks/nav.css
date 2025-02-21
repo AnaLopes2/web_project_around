@@ -13,7 +13,7 @@
   height: 33px;
   object-fit: contain;
 }
-@media screen and (max-width: 890px) {
+@media screen and (max-width: 800px) {
   .nav__logo {
     margin-left: 28px;
   }
