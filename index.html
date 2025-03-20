@@ -55,6 +55,31 @@
           <button class="popup__button">Save</button>
         </form>
       </div>
+      <div class="popup popup-add">
+        <button class="popup__close-button popup__close-button-add">
+          <img
+            class="popup__icon"
+            src="./images/closebutton.png"
+            alt="close icon"
+          />
+        </button>
+        <h3 class="popup__title">Add a new place</h3>
+        <form class="popup__form" name="add-item">
+          <input
+            id="title"
+            class="popup__input-name"
+            type="text"
+            placeholder="Title"
+          />
+          <input
+            id="image-url"
+            class="popup__input-description"
+            type="text"
+            placeholder="Image URL"
+          />
+          <button class="popup__button">Add</button>
+        </form>
+      </div>
 
       <main class="content">
         <section class="profile">
@@ -84,113 +109,21 @@
           />
         </section>
 
-        <section class="elements">
-          <div class="elements__item">
-            <img
-              class="elements__item-image"
-              src="./images/Image1.jpg"
-              alt="Imagem 1"
-            />
-            <div class="elements__item-info">
-              <p class="elements__item-name">Vale de Yosemite</p>
-              <button class="elements__item-likeBtn">
-                <img
-                  class="like-icon"
-                  src="./images/likeButton.svg"
-                  alt="like button"
-                />
-              </button>
-            </div>
-          </div>
+        <section class="elements"></section>
+        <div class="popup-overlay"></div>
 
-          <div class="elements__item">
+        <!-- Popup of the image -->
+        <div class="popup-image">
+          <button class="popup-image__close-button">
             <img
-              class="elements__item-image"
-              src="./images/image2.png"
-              alt="Imagem 2"
+              class="popup-image__icon"
+              src="./images/closebutton.png"
+              alt="Close button"
             />
-            <div class="elements__item-info">
-              <p class="elements__item-name">Lago Louise</p>
-              <button class="elements__item-likeBtn">
-                <img
-                  class="like-icon"
-                  src="./images/likeButton.svg"
-                  alt="like Button"
-                />
-              </button>
-            </div>
-          </div>
-
-          <div class="elements__item">
-            <img
-              class="elements__item-image"
-              src="./images/image3.png"
-              alt="Imagem 1"
-            />
-            <div class="elements__item-info">
-              <p class="elements__item-name">Montanhas Care...</p>
-              <button class="elements__item-likeBtn">
-                <img
-                  class="like-icon"
-                  src="./images/likeButton.svg"
-                  alt="like Button"
-                />
-              </button>
-            </div>
-          </div>
-
-          <div class="elements__item">
-            <img
-              class="elements__item-image"
-              src="./images/image4.png"
-              alt="Imagem 1"
-            />
-            <div class="elements__item-info">
-              <p class="elements__item-name">Latemar</p>
-              <button class="elements__item-likeBtn">
-                <img
-                  class="like-icon"
-                  src="./images/likeButton.svg"
-                  alt="like Button"
-                />
-              </button>
-            </div>
-          </div>
-          <div class="elements__item">
-            <img
-              class="elements__item-image"
-              src="./images/image5.png"
-              alt="Imagem 1"
-            />
-            <div class="elements__item-info">
-              <p class="elements__item-name">Parque Nacional...</p>
-              <button class="elements__item-likeBtn">
-                <img
-                  class="like-icon"
-                  src="./images/likeButton.svg"
-                  alt="like Button"
-                />
-              </button>
-            </div>
-          </div>
-          <div class="elements__item">
-            <img
-              class="elements__item-image"
-              src="./images/image6.png"
-              alt="Imagem 1"
-            />
-            <div class="elements__item-info">
-              <p class="elements__item-name">Lago di Braies</p>
-              <button class="elements__item-likeBtn">
-                <img
-                  class="like-icon"
-                  src="./images/likeButton.svg"
-                  alt="like Button"
-                />
-              </button>
-            </div>
-          </div>
-        </section>
+          </button>
+          <img class="popup-image__img" src="" alt="Expanded Image" />
+          <p class="popup-image__name"></p>
+        </div>
       </main>
       <footer class="footer">
         <p class="footer__copyrigth">@2024. Ana Lopes</p>

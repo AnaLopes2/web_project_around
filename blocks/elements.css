@@ -24,6 +24,7 @@
   flex-direction: column;
   box-sizing: border-box;
   box-shadow: 0px 0px 25px 0px rgba(0, 0, 0, 0.15);
+  position: relative;
 }
 .elements__item-image {
   width: 100%;
@@ -51,6 +52,7 @@
   white-space: nowrap;
   overflow: hidden;
 }
+
 .elements__item-likeBtn {
   background-color: transparent;
   border: none;
@@ -71,6 +73,30 @@
 .elements__item-likeBtn.liked .like-icon {
   content: url("../images/likedButton.png");
 }
+
+.elements__item-trashBtn {
+  background: none;
+  border: none;
+  position: absolute;
+  top: 18px;
+  right: 15px;
+  width: 18px;
+  height: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.trash-icon {
+  width: 18px;
+  height: 18px;
+}
+.elements__item-trashBtn:hover .trash-icon {
+  background-color: rgb(47, 45, 45);
+}
+
 @media screen and (max-width: 800px) {
   .elements {
     grid-template-columns: repeat(2, 1fr);
