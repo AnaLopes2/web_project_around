@@ -225,3 +225,15 @@ addForm.addEventListener("submit", function (evt) {
     alert("Please enter a valid name and image URL!");
   }
 });
+//
+
+////////////////////////////////////////////////////////////////////////////////////////////
+
+enableValidation({
+  formSelector: ".popup__form",
+  inputSelector: ".popup__input",
+  submitButtonSelector: ".popup__button",
+  inactiveButtonClass: "popup__button_disabled",
+  inputErrorClass: "popup__input_type_error",
+  errorClass: "popup__error_visible",
+});

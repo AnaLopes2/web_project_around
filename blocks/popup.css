@@ -88,6 +88,10 @@
 .popup__input-name,
 .popup__input-description {
   color: black;
+  width: 100%;
+  max-width: 358px;
+  box-sizing: border-box;
+  margin: 0;
 }
 
 .popup__button {
@@ -98,7 +102,7 @@
   cursor: pointer;
   width: 358px;
   height: 50.15px;
-  margin: 48px auto 36.51px;
+  margin: 31px auto 36.51px;
   transition: background 0.3s, transform 0.3s;
   font-family: "Inter", "Arial", sans-serif;
   font-weight: 400;
@@ -174,6 +178,32 @@
   width: 40px;
   height: 40px;
 }
+.popup__button_disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+  opacity: 0.5;
+  color: rgb(131, 131, 131);
+  margin-top: 31px;
+}
+
+.popup__input_type_error {
+  border-color: red;
+}
+
+.popup__error {
+  min-height: 16px;
+  font-size: 12px;
+  color: transparent;
+  display: block;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  width: 358px;
+  white-space: normal; /* permite quebra de linha */
+  word-wrap: break-word;
+}
+.popup__error_visible {
+  color: red;
+}
 @media screen and (max-width: 644px) {
   .popup {
     max-width: 282px;
@@ -211,6 +241,7 @@
   }
   .popup__button {
     width: 238px;
+    margin-top: 15px;
   }
 
   .popup__input-name {
