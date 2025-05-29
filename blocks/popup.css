@@ -198,7 +198,7 @@
   margin-top: 5px;
   margin-bottom: 5px;
   width: 358px;
-  white-space: normal; /* permite quebra de linha */
+  white-space: normal;
   word-wrap: break-word;
 }
 .popup__error_visible {
