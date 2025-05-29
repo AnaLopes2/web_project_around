@@ -56,7 +56,7 @@ function addCard(cardData) {
   likeIcon.alt = "like button";
 
   likeButton.appendChild(likeIcon);
-  likeButton.addEventListener("click", function () {
+  likeButton.addEventListener("click", function (event) {
     event.stopPropagation();
 
     likeButton.classList.toggle("liked");
@@ -104,6 +104,9 @@ initialCards.forEach(addCard);
 const popup = document.querySelector(".popup");
 const popupAdd = document.querySelector(".popup-add");
 const overlay = document.querySelector(".popup-overlay");
+overlay.addEventListener("click", () => {
+  closeAllPopups();
+});
 
 const editButton = document.querySelector(".profile__edit-button");
 const closeButton = document.querySelector(".popup__close-button");
@@ -149,7 +152,6 @@ document.addEventListener("DOMContentLoaded", function () {
   function closePopup() {
     popup.classList.remove("popup_opened");
     overlay.classList.remove("popup-overlay_opened");
-
     popup.removeChild(popupName);
   }
 
@@ -225,8 +227,22 @@ addForm.addEventListener("submit", function (evt) {
     alert("Please enter a valid name and image URL!");
   }
 });
-//
+//Close all popups
+function closeAllPopups() {
+  document
+    .querySelectorAll(".popup, .popup-add, .popup-image")
+    .forEach((popupElement) => {
+      popupElement.classList.remove("popup_opened", "popup_change_display");
+    });
+  overlay.classList.remove("popup-overlay_opened");
+}
 
+//Close when ESC is pressed
+document.addEventListener("keydown", (Event) => {
+  if (Event.key === "Escape") {
+    closeAllPopups();
+  }
+});
 ////////////////////////////////////////////////////////////////////////////////////////////
 
 enableValidation({
