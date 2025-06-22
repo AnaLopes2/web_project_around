@@ -91,7 +91,8 @@
   width: 100%;
   max-width: 358px;
   box-sizing: border-box;
-  margin: 0;
+  margin-bottom: 0;
+  margin-left: 36px;
 }
 
 .popup__button {
@@ -203,6 +204,7 @@
 }
 .popup__error_visible {
   color: red;
+  margin-left: 36px;
 }
 @media screen and (max-width: 644px) {
   .popup {

@@ -94,7 +94,7 @@
   height: 18px;
 }
 .elements__item-trashBtn:hover .trash-icon {
-  background-color: rgb(47, 45, 45);
+  background-color: transparent;
 }
 
 @media screen and (max-width: 800px) {
